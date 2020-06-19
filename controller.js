@@ -21,7 +21,7 @@ const controller = ()=> {
             
             if(data.length != 0) {
                 if(data[0].name != undefined) {
-                    return  {"customerInfo" : JSON.stringify( {"name" : data[0].name } )};
+                    return  {"customerInfo" : JSON.stringify( data[0] )};
                 }
             }
             
@@ -40,7 +40,7 @@ const controller = ()=> {
             
             if(data2.length != 0) {
                 if(data2[0].name != undefined) {
-                    return  {"customerInfo" : JSON.stringify( {"name" : data2[0].name } )};
+                    return  {"customerInfo" : JSON.stringify(data2[0])};
                 }
             }
             
