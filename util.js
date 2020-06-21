@@ -1,11 +1,11 @@
 const util = () => {
 
     const getFromEnvironmnet = () => {
-        if(process.env.username && process.env.password){
+        if(process.env.API_KEY && process.env.API_PASSWORD){
             return {
-                "endpoint" : process.env.endpoint,
-                "username" : process.env.username,
-                "passowrd" : process.env.password
+                "endpoint" : process.env.API_URL,
+                "username" : process.env.API_KEY,
+                "passowrd" : process.env.API_PASSWORD
             }
         }else{
             return null;
