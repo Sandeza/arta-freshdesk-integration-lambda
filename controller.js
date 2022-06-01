@@ -10,15 +10,9 @@ const controller = ()=> {
                 console.log(tickets);
                 if(tickets){
                     contactinfo.tickets = tickets;
-//                     if(tickets.openTickets.length === 0){
-//                         let newTicket = await fdTicketService().createTicket(contactinfo.id);
-//                         contactinfo.tickets.openTickets.push(newTicket);
-//                     } 
+
                 } 
-//                     else {
-//                     let newTicket = await fdTicketService().createTicket(contactinfo.id);
-//                     contactinfo.tickets.openTickets.push(newTicket);
-//                 }
+
             }
             return contactinfo;
         }
